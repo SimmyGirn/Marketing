@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <p>Impressions: {{ impressions }}</p>
+    <p>Engagement Rate: {{ engagement_rate }}</p>
+    <p>Click-Through Rate (CTR): {{ CTR }}</p>
+    <p><strong>Predicted Future CTR: {{ future_ctr }}</strong></p>
+    <p><strong>Predicted Future Engagement Rate: {{ future_engagement_rate }}</strong></p>
+    <p><strong>Predicted Future Impressions: {{ future_impressions }}</strong></p>
+    <p><strong>Predicted Future Engagement: {{ future_engagement }}</strong></p>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
